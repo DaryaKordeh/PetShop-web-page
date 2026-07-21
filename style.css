@@ -1,0 +1,441 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    
+    header {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.6em;
+      font-weight: 700;
+      color: #e7b613;
+    }
+
+    nav {
+      display: flex;
+      gap: 38px;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 1em;
+      color: #383838;
+      transition: color 0.3s;
+      
+    }
+
+    nav a:hover {
+      color: rgb(255, 184, 20);
+      font-size: large;
+    
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      font-size: 1.2em;
+    }
+
+    
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(243, 177, 23);
+      padding: 60px 80px;
+      color: #684115;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+
+    .hero-text button {
+      background-color: rgb(255, 243, 206);
+      color: #1a1a1a;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .hero-text button:hover {
+      background-color: #ff9216e5;
+      color: #f0f0f0;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+    }
+
+    .hero img {
+      width: 350px;
+      border-radius: 20px;
+    }
+
+    
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 60px 80px;
+      background-color: #ffffff;
+    }
+
+    .cat-card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.158);
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .cat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 5px 5px 6px rgba(68, 68, 68, 0.445);
+    }
+
+    .cat-card img {
+       object-fit: contain;
+      
+    }
+
+    .cat-card p {
+      padding: 15px;
+      font-weight: 600;
+      background-color: #ffef92;
+    }
+
+    
+    .section-title {
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: 700;
+      margin-top: 60px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .tabs button {
+      border: none;
+      background-color: #ffe6a7;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+  
+    .tabs button:hover {
+      background-color: #e7aa1b;
+      color: white;
+    }
+
+    .product-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 0 80px 60px;
+    }
+
+    .product-card {
+      background-color: rgb(255, 255, 255);
+      border-radius: 15px;
+      width: 230px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.219);
+      overflow: hidden;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+      box-shadow: 4px 4px 3px rgba(252, 255, 58, 0.466);
+    }
+
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card h4 {
+      font-size: 1em;
+      padding: 10px 15px 5px;
+    }
+
+    .product-card p {
+    
+      padding: 0 15px 15px;
+      color: #5f5d5d;
+      font-size: 0.9em;
+    }
+
+  
+    .help {
+      background-color: #F573A3;
+      color: rgb(104, 17, 75);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 80px;
+      flex-wrap: wrap;
+    }
+
+
+
+    .help-text {
+      max-width: 500px;
+    }
+
+
+
+    .help h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+
+    .help p {
+      margin-bottom: 20px;
+    }
+
+    .help button {
+      background-color: white;
+      color: #333;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+
+
+
+    .help button:hover{
+      background-color: #ff2575;
+      color: #ffffff;
+    }
+
+
+
+    .help img {
+      width: 300px;
+      border-radius: 20px;
+      margin-top: 15px;
+    }
+
+    
+
+    .why {
+      padding: 60px 80px;
+      background-color: #fcff65;
+      text-align: center;
+     
+    }
+
+
+
+    .why h3 {
+      font-size: 1.8em;
+      margin-bottom: 40px;
+    }
+
+
+
+
+    .why-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    
+    }
+
+    .why-item {
+      width: 220px;
+    }
+
+    .why-item h4 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .why-item p {
+      color: #3a3a3a;
+      font-size: 0.95em;
+       border-left: 2px solid rgb(59, 59, 59) ;
+    }
+
+    
+
+
+
+    footer {
+      background-color: #fff8f0;
+      padding: 40px 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      font-size: 0.95em;
+      color: #a57111;
+    }
+
+
+
+
+    footer .footer-col h4 {
+      font-weight: 700;
+      font-size: larger;
+      margin-bottom: 10px;
+    }
+
+
+
+
+
+
+    footer .footer-col a {
+      display: block;
+      color: #494949;
+      margin-bottom: 6px;
+      transition: color 0.3s;
+    }
+
+
+
+
+
+    footer .footer-col a:hover {
+      color: hsl(0, 0%, 0%);
+      text-decoration: underline;
+    }
+
+    footer .social {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+
+
+
+    footer p {
+      text-align: center;
+      width: 100%;
+      margin-top: 20px;
+      color: #666;
+    }
+
+    
+    @media (max-width: 900px) {
+      header {
+        padding: 15px 25px;
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .hero img {
+        width: 250px;
+        margin-top: 20px;
+      }
+
+      .categories {
+        padding: 30px 20px;
+      }
+
+      .product-list {
+        padding: 0 20px 40px;
+      }
+
+
+
+      .help {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+
+
+
+      .help img {
+        width: 220px;
+      }
+
+
+      .why {
+        padding: 40px 20px;
+      }
+
+      
+      footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+    }
+
+
